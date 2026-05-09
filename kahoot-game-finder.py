@@ -13,7 +13,7 @@ document.addEventListener("keydown", (e) => {
 function printToTerminal(text, isPin=false) {
     if (isPin) {
         terminal.innerHTML += "\n==============================\n";
-        terminal.innerHTML += `<span class="pin">🎯 ${text}</span>\n`;
+        terminal.innerHTML += `<span class="pin">${text}</span>\n`;
         terminal.innerHTML += "==============================\n";
     } else {
         terminal.innerHTML += text + "\n";
